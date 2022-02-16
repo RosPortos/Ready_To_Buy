@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html')
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <div class="mobile-overflow">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>Вход в личный кабинет</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <section class="entrance">
+            <div class="container">
+                <div class="entrance__wrapper">
+                    <h2 class="entrance__title title">
+                        Вход в личный кабинет
+                    </h2>
+                    <div class="form">
+                        <div class="form__input">
+                            <span>Логин</span>
+                            <input type="text" placeholder="Введите логин">
+                        </div>
+                        <div class="form__input form__input-password">
+                            <span>Пароль</span>
+                            <input id="password-input" type="password" placeholder="Введите пароль">
+                            <button class="password-show"></button>
+                        </div>
+                        <div class="form__check">
+                            <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox">Запомнить пароль</label>
+                        </div>
+                        <div class="form__capcha">
+                            <img loading="lazy" src="img/entrance-form__capcha.png" alt="img">
+                        </div>
+                        <button class="form__btn entrance-btn">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="entrance__bottom">
+                        <p>
+                            Уже зарегистрированы, но не знаете свой пароль?
+                            Вы можете <a href="#">получить пароль на email</a>, если он верно указан.
+                        </p>
+                        <div class="entrance__bottom-link">
+                            <span>Еще не зарегистрированы?</span>
+                            <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

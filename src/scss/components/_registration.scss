@@ -1,0 +1,272 @@
+.registration {
+    @include adaptive("padding-top", 27, 20);
+    margin-bottom: 40px;
+}
+
+.registration__title {
+    @include adaptive("margin-bottom", 25, 20);
+
+    text-align: center;
+}
+
+.registration__from {
+    max-width: 868px;
+    margin: 0 auto;
+    padding: 18px 16px 30px;
+
+    @media(max-width:495px) {
+        padding: 15px 12px 20px;
+    }
+
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+.registration__from-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 26px 16px;
+    margin-bottom: 26px;
+
+    @media(max-width:903px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:636px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 18px;
+    }
+}
+
+
+.registration__name {
+    margin-bottom: 8px;
+
+    color: #000000;
+    font-size: 16px;
+    @include adaptive("font-size", 18, 14);
+
+    font-weight: 400;
+}
+
+.registration__input {
+    height: 40px;
+    width: 100%;
+    padding: 12px 10px;
+
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    color: #000;
+    @include adaptive("font-size", 16, 12);
+    font-weight: 400;
+
+    &::placeholder {
+        color: #777777;
+        font-family: "Roboto";
+        font-size: 14px;
+        @include adaptive("font-size", 16, 12);
+        font-weight: 400;
+    }
+}
+
+.registration__group--password1 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    @media(max-width:636px) {
+        grid-column-start: 1;
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+}
+
+.registration__group--password2 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    @media(max-width:636px) {
+        grid-column-start: 1;
+        grid-row-start: 10;
+        grid-row-end: 10;
+    }
+}
+
+.registration__link {
+    color: #777777;
+    text-decoration: underline;
+}
+
+.registration__captcha {
+    margin: 24px 0;
+
+    @media(max-width:495px) {
+        margin: 20px 0;
+
+    }
+}
+
+.registration__btn {
+    width: 100%;
+    max-width: 268px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #48d739;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        @media(min-width:1024px) {
+            background-color: #7ee972;
+        }
+    }
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=text],
+.iti--allow-dropdown input[type=tel],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=text],
+.iti--separate-dial-code input[type=tel] {
+    width: 100%;
+}
+
+.iti {
+    width: 100%;
+    z-index: 4;
+}
+
+.iti__selected-flag {
+    justify-content: space-between;
+    padding: 0 16px !important;
+    width: 100% !important;
+    border-radius: 8px;
+}
+
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container {
+    height: 40px;
+    width: 100%;
+
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    position: static !important;
+    z-index: 2;
+
+    &:hover {
+        background-color: #fff !important;
+
+        .iti__selected-flag {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.iti__country-list {
+    position: absolute;
+    top: 30px;
+    left: 1px !important;
+    right: 0;
+    z-index: -1 !important;
+
+    max-height: 272px;
+    overflow-y: scroll;
+    padding: 26px 16px 16px !important;
+
+    background-color: #fff !important;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none !important;
+    border: none !important;
+
+    will-change: transform;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.iti__country {
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+
+.iti__divider {
+    display: none;
+}
+
+.iti__country {
+    display: flex !important;
+}
+
+.iti__flag-box {
+    order: 1 !important;
+}
+
+.iti__dial-code {
+    order: 2 !important;
+    min-width: 48px;
+    margin-left: 8px;
+}
+
+.iti__country-name {
+    order: 3 !important;
+    margin-right: 0 !important;
+    margin-left: 8px !important;
+}
+
+.registration__input--tel {
+    display: none;
+}
+
+.registration__group {
+    position: relative;
+
+    .error-input {
+        border: 1px solid #ffa0a0;
+    }
+
+    .error-messages {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        color: #ff5d5d;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &--data {
+        &::before {
+            content: '';
+            width: 13px;
+            height: 13px;
+
+            background-image: url("../img/calendar.svg");
+            pointer-events: none;
+
+            position: absolute;
+            right: 17px;
+            bottom: 14px;
+            z-index: 7;
+        }
+    }
+}
+
+.registration__input--data {
+    position: relative;
+    z-index: 6;
+}

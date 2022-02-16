@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html')
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <div class="mobile-overflow">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>Связь с Площадкой</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <section class="communic">
+            <div class="container">
+                <h2 class="communic__title title">
+                    Связь с Площадкой
+                </h2>
+                <div class="form">
+                    <div class="form__wrapper">
+                        <div class="form__select">
+                            <span>Тема обращения</span>
+                            <div>
+                                <select>
+                                    <option value="">
+                                        Выберите тему
+                                    </option>
+                                    <option value="">
+                                        Выберите тему
+                                    </option>
+                                    <option value="">
+                                        Выберите тему
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__input">
+                            <span>Заголовок обращения</span>
+                            <input type="text" placeholder="Введите заголовок">
+                        </div>
+                        <div class="form__input">
+                            <span>Контактный E-mail</span>
+                            <input type="text" placeholder="Введите Ваш E-mail">
+                        </div>
+                        <div class="form__textarea">
+                            <span>Текст обращения</span>
+                            <textarea name="comment" placeholder="Введите текст"></textarea>
+                        </div>
+                    </div>
+                    <button class="communic__btn entrance-btn">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

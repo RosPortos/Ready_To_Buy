@@ -1,0 +1,201 @@
+.product {
+    margin-bottom: 35px;
+}
+
+.product__wrapper {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+
+
+.card-prod {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    transition: all .3s;
+    border-radius: 8px;
+    height: 100%;
+    position: relative;
+    &:hover {
+        background-color: #f7f7f7;
+        .card-prod__name {
+            color: #26c1fa;
+        }
+        .card-prod__btn {
+            background-color: #48d739;
+            color: #ffffff;
+        }
+    }
+}
+
+.card-prod__btn {
+    border-radius: 8px;
+    font-size: calc((100vw - 375px)/(1920 - 375) * 3 + 12px);
+    font-weight: 500;
+    padding: 5px 16px;
+    margin-top: 8px;
+    width: fit-content;
+    transition: all .3s;
+    border: 1px solid #48d739;
+    color: #48d739;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-prod__img {
+    height: 187px;
+    height: calc((100vw - 375px)/(1920 - 375) * (279 - 155) + 155px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+.card-prod__category {
+    color: #777777;
+    font-size: calc((100vw - 375px)/(1920 - 375) * 2 + 12px);
+    font-weight: 400;
+    margin: 6px 0;
+    @include text-hide(1);
+    overflow-x: hidden;
+}
+
+.card-prod__name {
+    color: #000000;
+    font-size: calc((100vw - 375px)/(1920 - 375) * 4 + 14px);
+    font-weight: 400;
+    transition: all .3s;
+    height: 40px;
+    word-break: break-word;
+    @include text-hide(2);
+}
+
+.card-prod__price {
+    color: #000000;
+    font-size: 16px;
+    @include adaptive("font-size", 16, 12);
+    font-weight: 400;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    div {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: fit-content;
+        padding: 0 7px;
+        margin-left: 5px;
+        white-space: nowrap;
+        &::before, &::after {
+            position: absolute;
+            color: #e6e6e6;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &::before {
+            content: '(';
+            left: 0;
+        }
+        &::after {
+            content: ')';
+            right: 0;
+        }
+        span {
+            color: #26c1fa;
+            padding-left: 6px;
+        }
+    }
+}
+
+.product__more-btn {
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: calc((100vw - 375px)/(1920 - 375) * (18 - 12) + 12px);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    margin-top: 30px;
+    transition: all .3s;
+    &:hover {
+        background-color: #dddddd;
+    }
+}
+
+.product__filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17px 0 9px 0;
+    a {
+        display: block;
+        padding: 8px;
+        color: #000000;
+        @include adaptive("font-size", 18, 14);
+        font-weight: 400;
+        border-radius: 8px;
+        border: 1px solid #e6e6e6;
+        background-color: #ffffff;
+        margin-right: 8px;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 8px;
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+}
+
+.search-top {
+    margin-bottom: 25px;
+    &__title {
+        span {
+            color: #777777;
+            @include adaptive("font-size", 16, 12);
+            font-weight: 400;
+            padding-left: 7px;
+        }
+    }
+    &__link {
+        color: #48d739;
+        font-size: calc((100vw - 480px)/(1920 - 375) * (18 - 12) + 12px);
+        font-weight: 400;
+        text-decoration: underline;
+        position: relative;
+        margin-top: 20px;
+        display: block;
+        width: fit-content;
+        padding: 10px 20px 10px 10px;
+        transition: all .3s;
+        border-radius: 8px;
+        &:hover {
+            color: #48d739;
+            background-color: #e9ffe6;
+        }
+        &::before {
+            position: absolute;
+            content: url('../img/wew-stores__link-all.png');
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s;
+        }
+    }
+}
+
+.search-prod-filter {
+    margin-bottom: 30px;
+}

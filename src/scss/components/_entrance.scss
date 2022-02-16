@@ -1,0 +1,110 @@
+.entrance {
+    padding: 25px 0;
+
+    .form {
+        margin-top: 25px;
+        width: 370px;
+    }
+}
+
+.entrance__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrance-btn {
+    border-radius: 8px;
+    background-color: #48d739;
+    width: 240px;
+    color: #ffffff;
+    @include adaptive("font-size", 18, 16);
+    font-weight: 500;
+    padding: 12px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        background-color: #7aee6d;
+        color: #ffffff;
+    }
+}
+
+.entrance__bottom {
+    margin-top: 25px;
+    text-align: center;
+    max-width: 540px;
+
+    p {
+        color: #000000;
+        @include adaptive("font-size", 20, 16);
+        font-weight: 400;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #dddddd;
+
+        a {
+            color: #26c1fa;
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #7bdcff;
+            }
+        }
+    }
+}
+
+.entrance__bottom-link {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        color: #000000;
+        @include adaptive("font-size", 20, 16);
+        font-weight: 400;
+        display: block;
+    }
+
+    a {
+        color: #34c5fa;
+        @include adaptive("font-size", 18, 16);
+        font-weight: 500;
+        padding: 12px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        border: 1px solid #26c1fa;
+        background-color: #ffffff;
+        width: 240px;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: #26c1fa;
+            color: #ffffff;
+        }
+    }
+}
+
+.cancellation {
+    color: #777777;
+    @include adaptive("font-size", 18, 16);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.passw-recov-link-text {
+    color: #000000;
+    font-family: Roboto;
+    @include adaptive("font-size", 20, 16);
+    font-weight: 400;
+    max-width: 620px;
+    text-align: center;
+    margin: 25px 0;
+}

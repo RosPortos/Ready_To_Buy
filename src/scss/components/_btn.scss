@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+    border-radius: 8px;
+
+    transition: .3s linear;
+
+    &--trans {
+        border: 1px solid #48D739;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #48D739;
+
+        @media(min-width:1024px) {
+            &:hover {
+                background-color: #7ee972;
+                border-color: #7ee972;
+                color: #fff;
+            }
+        }
+    }
+}

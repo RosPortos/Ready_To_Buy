@@ -1,0 +1,105 @@
+.wew-stores {
+    padding: 20px 0 40px 0;
+}
+
+.wew-stores__title {
+    color: #ffffff;
+    font-size: 26px;
+    font-size: calc((100vw - 480px)/(1920 - 375) * (32 - 18) + 18px);
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: #48d739;
+    padding: 5px 20px;
+    width: fit-content;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #ffffff;
+        background-color: #78ee6b;
+    }
+
+}
+
+.wew-stores__wrap-link {
+    margin-top: 24px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.wew-stores__link {
+    height: 53px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    padding: 4px 18px;
+    color: #000000;
+    font-size: calc((100vw - 480px)/(1920 - 375) * (18 - 12) + 12px);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    @include text-hide(2);
+    line-height: 23px;
+    overflow-x: hidden;
+    &:hover {
+        background-color: #dddddd;
+    }
+}
+
+.wew-stores__link-all {
+    color: #48d739;
+    font-size: calc((100vw - 480px)/(1920 - 375) * (18 - 12) + 12px);
+    font-weight: 400;
+    text-decoration: underline;
+    position: relative;
+    margin-top: 35px;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px 10px 10px;
+    transition: all .3s;
+    border-radius: 8px;
+    &:hover {
+        color: #48d739;
+        background-color: #e9ffe6;
+    }
+    &::before {
+        position: absolute;
+        content: url('../img/wew-stores__link-all.png');
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s;
+    }
+}
+
+.wew-stores__wrap-ban {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #dddddd;
+        height: 5px;
+    }
+    a {
+        display: block;
+        width: 32.3%;
+        img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}

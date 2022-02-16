@@ -1,0 +1,234 @@
+.ui-datepicker {
+    width: 288px;
+    top: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 5 !important;
+    opacity: 1 !important;
+
+    animation: fade 0.3s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    border-radius: 8px;
+    padding: 26px 16px 16px;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+
+}
+
+.ui-widget-header {
+    border: none;
+    background: transparent;
+
+
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 40px 0 0;
+    margin-bottom: 15px;
+
+    &::before {
+        content: '';
+        width: 6px;
+        height: 10px;
+
+        background-image: url('../img/calendar-arrow.svg');
+
+        position: absolute;
+        top: 4px;
+        right: 80px;
+        transform: rotate(90deg);
+        z-index: 100;
+
+        pointer-events: none;
+    }
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0;
+}
+
+.ui-datepicker-month {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ui-datepicker-year {
+    margin: 0 !important;
+
+    text-align: center !important;
+    font-family: "Roboto" !important;
+    color: #000;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.16px;
+    line-height: 18px;
+    text-align: center;
+
+    border: none;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: transparent;
+
+    top: unset !important;
+    bottom: 0 !important;
+
+    &:hover {
+        border: none;
+        background-color: transparent;
+    }
+
+    &::before {
+        content: '';
+        width: 6px;
+        height: 10px;
+
+        background-image: url('../img/calendar-arrow.svg');
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 2px;
+
+    &:hover {
+        right: 2px !important;
+    }
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+
+    &:hover {
+        left: 2px !important;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
+
+.ui-datepicker-calendar thead span {
+    color: #161616;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ui-state-default {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 8px !important;
+
+    border: none !important;
+    background-color: transparent !important;
+
+    color: #161616 !important;
+    font-family: "IBM Plex Sans" !important;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.16px;
+    line-height: 18px;
+    font-weight: 400 !important;
+
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: '';
+
+        width: 35px;
+        height: 35px;
+        background-color: #e5e5e5;
+        border-radius: 8px;
+        opacity: 0;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #161616 !important;
+
+        &::after {
+            opacity: 1;
+            background-color: #e5e5e5;
+        }
+    }
+}
+
+.ui-state-highlight {
+    background-color: transparent !important;
+    color: #48d739 !important;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+
+        background-color: #48d739;
+
+        position: absolute;
+        bottom: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.ui-state-active {
+    color: #ffffff !important;
+
+    &::after {
+        background-color: #48d739;
+        opacity: 1;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.ui-datepicker table {
+    margin: 0;
+}

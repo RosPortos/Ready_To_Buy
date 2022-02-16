@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 70px;
+    padding: 22px 0;
+    border-top: 1px solid #f0f0f0;
+    margin-top: auto;
+
+    &.closed-part {
+        .footer__wrapper {
+            margin-left: 320px;
+        }
+    }
+}
+.footer__wrapper {
+    a {
+        padding-left: 32px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: #838383;
+        }
+        position: relative;
+        &::before {
+            left: 0;
+            content: '';
+            position: absolute;
+            background-image: url('../img/chat.svg');
+            background-size:contain;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px;
+            top: -3px;
+        }
+    }
+}

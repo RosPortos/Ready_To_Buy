@@ -1,0 +1,40 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "null";
+@import "global";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/wew-stores";
+@import "./components/product";
+@import "./components/bottom-sec";
+@import "./components/footer";
+@import "./components/shop";
+@import "./components/for-sec";
+@import "./components/partners";
+@import "./components/entrance";
+@import "./components/form";
+@import "./components/communic";
+@import "./components/one-item";
+@import "./components/other-items";
+@import "./components/popup";
+@import "./components/advanced-search";
+@import "./components/select";
+@import "./components/registration";
+@import "./components/intlTelInput";
+@import "./components/shop-page";
+@import "./components/modal";
+@import "./components/closed-part";
+@import "./components/menu";
+@import "./components/check-cu";
+@import "./components/btn";
+
+
+@import "./components/_sprite";
+@import "./components/datepicker";
+
+
+
+@import "./components/media";

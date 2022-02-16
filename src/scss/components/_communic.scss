@@ -1,0 +1,24 @@
+.communic {
+    padding-bottom: 60px;
+    max-width: 800px;
+    .form {
+        margin-top: 25px;
+    }
+    .form__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form__input {
+        width: 48%;
+    }
+    .form__select {
+        width: 48%;
+    }
+}
+
+.communic__btn {
+    margin: 25px auto 0 0;
+}
+
+.entrance-btn {}
