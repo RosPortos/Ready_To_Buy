@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="il-style">
+    <div class="page">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="logo">
+                <img loading="lazy" src="img/logo.svg" alt="img">
+            </a>
+            <div class="header__catalog">
+                <button class="header__catalog--show">
+                    Каталог
+                </button>
+                <div class="catalog-list">
+                    <div class="catalog-list__title title">
+                        Каталог
+                        <button class="catalog-list__closed"></button>
+                    </div>
+                    <ul class="catalog-list__wrap">
+                        <li class="catalog-list__nav"></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Новые магазины</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Все магазины</a></li>
+                        <li class="catalog-list__item whole-catalog"><a href="#" class="catalog-list__link">Весь
+                                каталог</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Мода</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Красота</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Здоровье</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Еда и напитки</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Дом и сад</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Электроника</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Спортивные товары</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Услуги</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Зоотовары</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Музыка</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Книги</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Игрушки и хобби</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Билеты и впечатления</a>
+                        </li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Товары для
+                                коллекционеров</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Недвижимость</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Бизнес и
+                                промышленность</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Авто и мото</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Рукоделие</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Канцелярские товары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="header__shops">Магазины</a>
+            <nav class="nav" data-da=".catalog-list__nav, 1200,1">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link light-green">Клиентам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link green">Продавцам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link pink">Партнёрам</a></li>
+                </ul>
+            </nav>
+            <form class="search">
+                <div class="search__input">
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <button class="search__btn"></button>
+                <a href="#" class="search__filter">
+                    <span>Расширенный поиск</span>
+                </a>
+            </form>
+            <div class="header__account">
+                <a href="#" class="header__account--link">
+                    <span>Логин</span>
+                </a>
+                <div class="header__lang">
+                    <span class="lang-link lang-toggle">
+                        <img loading="lazy" src="img/header__account--icon.svg" alt="img">
+                    </span>
+                    <div class="lang-wrap">
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/gb.svg" alt="img">
+                            <span>English</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/header__account--icon.svg" alt="img">
+                            <span>Русский</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/ua.svg" alt="img">
+                            <span>Українська</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/il.svg" alt="img">
+                            <span>Иврит</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="header__favorites"></a>
+            <a href="#" class="header__basket">
+
+            </a>
+        </div>
+    </div>
+    <div class="mobil-nav">
+        <form class="mobil-nav__search">
+            <input type="text" placeholder="Поиск">
+            <button>
+                <img loading="lazy" src="img/search.svg" alt="img">
+            </button>
+        </form>
+        <a class="mobil-nav__home-btn" href="#"></a>
+        <button class="mobil-nav__search-btn"></button>
+        <a class="mobil-nav__heart-btn" href="#"></a>
+        <a class="mobil-nav__basket-btn" href="#"></a>
+    </div>
+</header>
+        <div class="closed-part">
+            <div class="menu">
+                <button class="menu__close"></button>
+                <p class="menu__title">Меню для клиента</p>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#">Мой профиль</a>
+                        <a class="menu__link" href="#">Информация о площадке</a>
+                        <a class="menu__link" href="#">Счёт CU</a>
+                        <a class="menu__link" href="#">Персональный счет</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Каталог</a>
+                        <a class="menu__link" href="#">Новые магазины</a>
+                        <a class="menu__link" href="#">Все магазины</a>
+                        <a class="menu__link active" href="#">Мои заказы</a>
+                        <a class="menu__link" href="#">Мои адреса</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Реферальная ссылка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="closed-part__content">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <div class="mobile-overflow">
+                                <li class="breadcrumbs__list-item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Клиентам</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Мои заказы</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span>Заказ №174683 от 24.06.2021</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <button class="show-menu">Показать меню</button>
+
+                    <h2 class="my-orders-info__title">Заказ №174683 от 24.06.2021</h2>
+
+                    <a class="my-orders-info__link" href="#">Вернуться в «Мои заказы»</a>
+
+                    <div class="my-orders-info__block">
+                        <div class="my-orders__top">
+                            <p class="my-orders__top-info">Товар <span>(силами продавца)</span></p>
+                        </div>
+                        <div class="my-orders__item">
+                            <div class="my-orders__photo">
+                                <img src="img/orders/order.png" alt="">
+                            </div>
+                            <div class="my-orders__info">
+                                <p class="my-orders__info-title">Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл. </p>
+                                <div class="my-orders__info-price">
+                                    $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                </div>
+                                <p class="my-orders__number">1 шт.</p>
+                            </div>
+                            <div class="my-orders__rating">
+                                Поставьте оценку:
+                                <div class="closed-part__tooltip">
+                                    <img class="closed-part__tooltip-icon" src="img/info.svg" alt="tooltip">
+                                    <p class="closed-part__tooltip-info">
+                                        Пример подсказки, нужно
+                                        добавить текст.
+                                    </p>
+                                </div>
+                                <div class="rate-yo"></div>
+                            </div>
+                        </div>
+                        <div class="my-orders__item">
+                            <div class="my-orders__photo">
+                                <img src="img/orders/order.png" alt="">
+                            </div>
+                            <div class="my-orders__info">
+                                <p class="my-orders__info-title">Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл. </p>
+                                <div class="my-orders__info-price">
+                                    $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                </div>
+                                <p class="my-orders__number">1 шт.</p>
+                            </div>
+                            <div class="my-orders__rating">
+                                Поставьте оценку:
+                                <div class="closed-part__tooltip">
+                                    <img class="closed-part__tooltip-icon" src="img/info.svg" alt="tooltip">
+                                    <p class="closed-part__tooltip-info">
+                                        Пример подсказки, нужно
+                                        добавить текст.
+                                    </p>
+                                </div>
+                                <div class="rate-yo"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-orders__data">
+                        <p class="my-orders__data-title">Данные оплаты</p>
+                        <div class="my-orders__data-content">
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Платежная система:</p>
+                                <p class="my-orders__data-value">Напрямую продавцу</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Сумма оплаты:</p>
+                                <p class="my-orders__data-value">ILS 159</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Дата оплаты:</p>
+                                <p class="my-orders__data-value green">Оплачено</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-orders__data">
+                        <p class="my-orders__data-title">Данные выполнения</p>
+                        <div class="my-orders__data-content">
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Тип доставки:</p>
+                                <p class="my-orders__data-value">Товар (силами продавца)</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Адрес доставки:</p>
+                                <p class="my-orders__data-value">Израиль</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Дата выполнения:</p>
+                                <p class="my-orders__data-value red">Не выполнен</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Склад:</p>
+                                <p class="my-orders__data-value">Израиль (ID 5083)</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Комментарий к заказу:</p>
+                                <p class="my-orders__data-value">-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-orders__data">
+                        <p class="my-orders__data-title">Данные покупателя</p>
+                        <div class="my-orders__data-content">
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Имя:</p>
+                                <p class="my-orders__data-value">Чичкова Анастасия Вадимовна</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Телефон:</p>
+                                <p class="my-orders__data-value">+972534961174</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Email:</p>
+                                <p class="my-orders__data-value">seraffimmaa@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-orders__data">
+                        <p class="my-orders__data-title">Данные продавца</p>
+                        <div class="my-orders__data-content">
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Имя:</p>
+                                <p class="my-orders__data-value">Khanunov Oleg Yuriy</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Телефон:</p>
+                                <p class="my-orders__data-value">0526433979</p>
+                            </div>
+                            <div class="my-orders__data-item">
+                                <p class="my-orders__data-info">Email:</p>
+                                <p class="my-orders__data-value">khanunovoleg@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer closed-part">
+	<div class="container">
+		<div class="footer__wrapper">
+			<a href="#">Связь с площадкой RTB</a>
+		</div>
+	</div>
+</footer>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

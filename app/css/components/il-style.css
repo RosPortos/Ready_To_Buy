@@ -892,4 +892,8 @@
 .il-style .other-item__btn {
   margin-left: auto;
 }
+
+.il-style .closed-part {
+  flex-direction: row-reverse;
+}
 /*# sourceMappingURL=il-style.css.map */

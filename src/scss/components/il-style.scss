@@ -927,3 +927,9 @@
         margin-left: auto;
     }
 }
+
+.il-style {
+    .closed-part {
+        flex-direction: row-reverse;
+    }
+}

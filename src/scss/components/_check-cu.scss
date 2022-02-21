@@ -29,15 +29,6 @@
     }
 }
 
-.check-cu__title {
-    font-weight: 500;
-    @include adaptive("font-size",  26, 18);
-    @include adaptive("line-height",  34, 24);
-    color: #000000;
-
-    margin-bottom: 5px;
-}
-
 .check-cu__descr {
     display: flex;
     align-items: center;
@@ -204,21 +195,6 @@
 
     &:nth-child(1) {
         margin-right: 36px;
-
-        select {
-            width: 268px;
-            height: 40px;
-            padding: 10px;
-
-            background: #FFFFFF;
-            border: 1px solid #DDDDDD;
-            border-radius: 8px;
-
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            color: #000000;
-        }
     }
 
     &:last-child {

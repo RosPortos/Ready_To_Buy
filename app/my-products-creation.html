@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="il-style">
+    <div class="page">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="logo">
+                <img loading="lazy" src="img/logo.svg" alt="img">
+            </a>
+            <div class="header__catalog">
+                <button class="header__catalog--show">
+                    Каталог
+                </button>
+                <div class="catalog-list">
+                    <div class="catalog-list__title title">
+                        Каталог
+                        <button class="catalog-list__closed"></button>
+                    </div>
+                    <ul class="catalog-list__wrap">
+                        <li class="catalog-list__nav"></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Новые магазины</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Все магазины</a></li>
+                        <li class="catalog-list__item whole-catalog"><a href="#" class="catalog-list__link">Весь
+                                каталог</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Мода</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Красота</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Здоровье</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Еда и напитки</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Дом и сад</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Электроника</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Спортивные товары</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Услуги</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Зоотовары</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Музыка</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Книги</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Игрушки и хобби</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Билеты и впечатления</a>
+                        </li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Товары для
+                                коллекционеров</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Недвижимость</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Бизнес и
+                                промышленность</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Авто и мото</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Рукоделие</a></li>
+                        <li class="catalog-list__item"><a href="#" class="catalog-list__link">Канцелярские товары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="header__shops">Магазины</a>
+            <nav class="nav" data-da=".catalog-list__nav, 1200,1">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link light-green">Клиентам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link green">Продавцам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link pink">Партнёрам</a></li>
+                </ul>
+            </nav>
+            <form class="search">
+                <div class="search__input">
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <button class="search__btn"></button>
+                <a href="#" class="search__filter">
+                    <span>Расширенный поиск</span>
+                </a>
+            </form>
+            <div class="header__account">
+                <a href="#" class="header__account--link">
+                    <span>Логин</span>
+                </a>
+                <div class="header__lang">
+                    <span class="lang-link lang-toggle">
+                        <img loading="lazy" src="img/header__account--icon.svg" alt="img">
+                    </span>
+                    <div class="lang-wrap">
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/gb.svg" alt="img">
+                            <span>English</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/header__account--icon.svg" alt="img">
+                            <span>Русский</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/ua.svg" alt="img">
+                            <span>Українська</span>
+                        </a>
+                        <a class="lang-link" href="#">
+                            <img loading="lazy" src="img/il.svg" alt="img">
+                            <span>Иврит</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="header__favorites"></a>
+            <a href="#" class="header__basket">
+
+            </a>
+        </div>
+    </div>
+    <div class="mobil-nav">
+        <form class="mobil-nav__search">
+            <input type="text" placeholder="Поиск">
+            <button>
+                <img loading="lazy" src="img/search.svg" alt="img">
+            </button>
+        </form>
+        <a class="mobil-nav__home-btn" href="#"></a>
+        <button class="mobil-nav__search-btn"></button>
+        <a class="mobil-nav__heart-btn" href="#"></a>
+        <a class="mobil-nav__basket-btn" href="#"></a>
+    </div>
+</header>
+        <div class="closed-part">
+            <div class="menu">
+                <button class="menu__close"></button>
+                <p class="menu__title">Меню для клиента</p>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#">Мой профиль</a>
+                        <a class="menu__link" href="#">Информация о площадке</a>
+                        <a class="menu__link" href="#">Счёт CU</a>
+                        <a class="menu__link" href="#">Персональный счет</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Каталог</a>
+                        <a class="menu__link" href="#">Новые магазины</a>
+                        <a class="menu__link" href="#">Все магазины</a>
+                        <a class="menu__link active" href="#">Мои заказы</a>
+                        <a class="menu__link" href="#">Мои адреса</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Реферальная ссылка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="closed-part__content">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <div class="mobile-overflow">
+                                <li class="breadcrumbs__list-item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Клиентам</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Мои товары</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span>Добавить товар</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <button class="show-menu">Показать меню</button>
+
+                    <h2 class="closed-part__title">Добавить товар</h2>
+
+                    <div class="my-orders__descr">
+                        Информация о разделе «Добавить товар»
+                    </div>
+
+                    <form class="my-orders__creation" action="/">
+                        <div class="my-orders__creation-item">
+                            <p class="my-orders__creation-title">Шаблоны для автоматического заполнения</p>
+                            <div class="my-orders__creation-wrapper">
+                                <div class="my-orders__creation-group my-orders__creation-group--big">
+                                    <p class="my-orders__creation-label">Шаблон</p>
+                                    <label class="select-label">
+                                        <select class="select-custom" name="sample">
+                                            <option value="" hidden>
+                                                Выберите из списка шаблонов
+                                            </option>
+                                            <option value="">
+                                                Пополнение счёта CU
+                                            </option>
+                                            <option value="">
+                                                Покупка пакета CU
+                                            </option>
+                                            <option value="">
+                                                Покупка товара
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="my-orders__creation-info">
+                                    <p>Вы можете использовать ранее созданные шаблоны для более быстрого заполнения — какой-то текст описание для продавцов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-item">
+                            <p class="my-orders__creation-title">Стоимость товара</p>
+                            <div class="my-orders__creation-group my-orders__creation-group--big">
+                                <p class="my-orders__creation-label">Название товара</p>
+                                <input class="input" type="text" name="productName" placeholder="Введите название товара">
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-item">
+                            <p class="my-orders__creation-title">Заголовок товара</p>
+                            <div class="my-orders__creation-wrapper">
+                                <div class="my-orders__creation-groups">
+                                    <div class="my-orders__creation-group my-orders__creation-group--small">
+                                        <p class="my-orders__creation-label">
+                                            Цена в долларах <br>
+                                            (сумма, которую получит продавец)
+                                        </p>
+                                        <input class="input" type="text" name="price" placeholder="0">
+                                    </div>
+                                    <div class="my-orders__creation-group my-orders__creation-group--small">
+                                        <p class="my-orders__creation-label">
+                                            Цена в CU <br>
+                                            (комиссионные)
+                                        </p>
+                                        <input class="input" type="text" name="commission" placeholder="0">
+                                    </div>
+                                    <div class="my-orders__creation-group my-orders__creation-group--small">
+                                        <p class="my-orders__creation-label">
+                                            Полная стоимость <br>
+                                            (общая стоимость продукта на сайте)
+                                        </p>
+                                        <input class="input input--readonly" value="$110" type="text" name="fullCost" readonly>
+                                    </div>
+                                    <div class="my-orders__creation-group my-orders__creation-group--small">
+                                        <p class="my-orders__creation-label">
+                                            Цена в валюте продавца <br>
+                                            (цена в вашей региональной валюте)
+                                        </p>
+                                        <input class="input" type="text" name="sellersСurrency" placeholder="0">
+                                    </div>
+                                    <div class="my-orders__creation-group my-orders__creation-group--small">
+                                        <p class="my-orders__creation-label">
+                                            НДС <br>
+                                            (налог на добавленную стоимость)
+                                        </p>
+                                        <input class="input" type="text" name="tax" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="my-orders__creation-info">
+                                    <p><span>Внимание!</span> В поле «Цена в валюте продавца» указывайте цену Вашего товара/услуги, которую Вы хотите получить от покупателя (без учета CU), в Вашей местной валюте. Возьмите цену, которую Вы указали в долларах в поле «Цена в долларах» и переведите ее по курсу в Вашу валюту.</p>
+                                    <p><span>Внимание!</span> Вам необходимо самостоятельно следить за курсом валют. Пожалуйста, своевременно корректируйте цену товара/услуги в соответствии с актуальным курсом Вашей валюты.</p>
+                                    <p><span>Внимание!</span> Если Вы являетесь плательщиком налога на добавленную стоимость (НДС), пожалуйста, указывайте в поле «Цена» стоимость Вашего товара/услуги с включенным НДС. В поле «НДС» укажите размер (процент) НДС, который Вы уплачиваете.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-item my-orders__creation-item--delivery">
+                            <p class="my-orders__creation-title">Информация о товаре</p>
+                            <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                <p class="my-orders__creation-label">Товар или Услуга</p>
+                                <label class="select-label">
+                                    <select class="select-custom" name="productOrService">
+                                        <option value="" hidden>
+                                            Выберите значение
+                                        </option>
+                                        <option value="">
+                                            Пополнение счёта CU
+                                        </option>
+                                        <option value="">
+                                            Покупка пакета CU
+                                        </option>
+                                        <option value="">
+                                            Покупка товара
+                                        </option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                <p class="my-orders__creation-label">Выберите тип доставки</p>
+                                <label class="select-label">
+                                    <select class="select-custom" name="delivery">
+                                        <option value="" hidden>
+                                            Выберите значение
+                                        </option>
+                                        <option value="">
+                                            Пополнение счёта CU
+                                        </option>
+                                        <option value="">
+                                            Покупка пакета CU
+                                        </option>
+                                        <option value="">
+                                            Покупка товара
+                                        </option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                <p class="my-orders__creation-label">
+                                    Вес (не более 30 кг. и не менее 0.01 кг.)
+                                </p>
+                                <input class="input" type="text" name="weight" placeholder="Введите вес">
+                            </div>
+                            <div class="my-orders__creation-block">
+                                <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                    <p class="my-orders__creation-label">Категория</p>
+                                    <label class="select-label">
+                                        <select class="select-custom" name="category">
+                                            <option value="">
+                                                Мода
+                                            </option>
+                                            <option value="">
+                                                Пополнение счёта CU
+                                            </option>
+                                            <option value="">
+                                                Покупка пакета CU
+                                            </option>
+                                            <option value="">
+                                                Покупка товара
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                    <label class="select-label">
+                                        <select class="select-custom" name="category">
+                                            <option value="">
+                                                Женская одежда
+                                            </option>
+                                            <option value="">
+                                                Пополнение счёта CU
+                                            </option>
+                                            <option value="">
+                                                Покупка пакета CU
+                                            </option>
+                                            <option value="">
+                                                Покупка товара
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="my-orders__creation-group my-orders__creation-group--middle">
+                                    <label class="select-label">
+                                        <select class="select-custom" name="category">
+                                            <option value="">
+                                                Джинсы
+                                            </option>
+                                            <option value="">
+                                                Пополнение счёта CU
+                                            </option>
+                                            <option value="">
+                                                Покупка пакета CU
+                                            </option>
+                                            <option value="">
+                                                Покупка товара
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="my-orders__creation-block">
+                                <div class="my-orders__creation-group my-orders__creation-group--big">
+                                    <p class="my-orders__creation-label">Ссылка на оплату напрямую продавцу</p>
+                                    <input class="input" type="text" name="productName" placeholder="Введите название товара">
+                                </div>
+                                <div class="my-orders__creation-info">
+                                    <p><span>Внимание!</span> При отсутствии http/https в начале ссылки системой будет автоматически подставлено http</p>
+                                </div>
+                            </div>
+                            <div class="my-orders__creation-group my-orders__creation-group--big">
+                                <p class="my-orders__creation-label">Полное описание товара</p>
+                                <textarea class="textarea" name="fullDescr" placeholder="Введите описание мин. 50, макс. 4000 символов"></textarea>
+                                <div class="my-orders__number-symbol">
+                                    <span>0</span> / 4000 символов
+                                </div>
+                            </div>
+
+                            <div class="my-orders__creation-group my-orders__creation-group--big">
+                                <p class="my-orders__creation-label">О продавце</p>
+                                <textarea class="textarea" name="aboutSeller" placeholder="Введите описание мин. 50, макс. 4000 символов"></textarea>
+                                <div class="my-orders__number-symbol">
+                                    <span>0</span> / 4000 символов
+                                </div>
+                            </div>
+
+                            <div class="my-orders__creation-group">
+                                <p class="my-orders__creation-label">Изображения товара (макс. 10 Мб на файл)</p>
+                                <div class="my-orders__photo-list">
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo1">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo2">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo3">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo4">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo5">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                    <label class="my-orders__file">
+                                        <input type="file" name="photo6">
+                                        <img src="img/plus.svg" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-item my-orders__creation-item--feedback">
+                            <p class="my-orders__creation-title">Обратная связь (не обязательно к заполнению)</p>
+                            <div class="my-orders__creation-wrapper">
+                                <div class="my-orders__creation-group my-orders__creation-group--big">
+                                    <p class="my-orders__creation-label">Комментарий для модератора</p>
+                                    <textarea class="textarea" name="comment" placeholder="Введите комментарий, либо вопрос, если он есть" ></textarea>
+                                </div>
+                                <div class="my-orders__creation-group my-orders__creation-group--big">
+                                    <p class="my-orders__creation-label">Ответ модератора</p>
+                                    <textarea class="textarea textarea--readonly" name="answer" readonly>Ответ появляется справа только тогда, когда он есть. При отсутствии комментария модератора, этот блок не появлятеся</textarea >
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class="checkbox my-orders__creation-checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox__content">
+                                С <a href="#">правовыми положениями</a> проекта ознакомлен и согласен.
+                            </div>
+                        </label>
+
+                        <div class="my-orders__creation-nav">
+                            <button class="my-orders__creation-btn btn btn--green">Добавить товар</button>
+                            <button class="my-orders__creation-btn btn btn--trans">Сохранить в черновик</button>
+                            <button class="my-orders__creation-btn btn btn--trans">Сохранить в шаблоны</button>
+                            <button class="my-orders__creation-btn btn btn--gray">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer closed-part">
+	<div class="container">
+		<div class="footer__wrapper">
+			<a href="#">Связь с площадкой RTB</a>
+		</div>
+	</div>
+</footer>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="il-style">
+    <div class="page">
+        @include('partials/header.html')
+        <div class="closed-part">
+            <div class="menu">
+                <button class="menu__close"></button>
+                <p class="menu__title">Меню для клиента</p>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#">Мой профиль</a>
+                        <a class="menu__link" href="#">Информация о площадке</a>
+                        <a class="menu__link" href="#">Счёт CU</a>
+                        <a class="menu__link" href="#">Персональный счет</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Каталог</a>
+                        <a class="menu__link" href="#">Новые магазины</a>
+                        <a class="menu__link" href="#">Все магазины</a>
+                        <a class="menu__link active" href="#">Мои заказы</a>
+                        <a class="menu__link" href="#">Мои адреса</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Реферальная ссылка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="closed-part__content">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <div class="mobile-overflow">
+                                <li class="breadcrumbs__list-item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Клиентам</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span>Мои заказы</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <button class="show-menu">Показать меню</button>
+
+                    <h2 class="closed-part__title">Мои заказы</h2>
+
+                    <div class="my-orders__descr">
+                        Информация о разделе «Мои заказы»
+                    </div>
+                    <form class="check-cu__detail" action="/">
+                        <p class="check-cu__detail-title">Детализация заказов</p>
+                        <div class="check-cu__detail-content">
+                            <div class="check-cu__detail-group check-cu__detail-group--start">
+                                <p class="check-cu__detail-label">Дата начала</p>
+                                <label class="datepicker-label">
+                                    <input class="registration__input registration__input--data" type="text" id="datepicker" autocomplete="off" placeholder="мм/дд/гггг">
+                                </label>
+                            </div>
+                            <div class="check-cu__detail-group check-cu__detail-group--finish">
+                                <p class="check-cu__detail-label">Дата окончания</p>
+                                <label class="datepicker-label">
+                                    <input class="registration__input registration__input--data" type="text" id="datepicker2" autocomplete="off" placeholder="мм/дд/гггг">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="check-cu__detail-nav">
+                            <button class="check-cu__detail-apply btn btn--trans">Применить</button>
+                            <input type="reset" class="check-cu__detail-reset" value="Сбросить фильтр">
+                            <div class="check-cu__detail-export">
+                                <button class="check-cu__detail-pdf">Экспорт в PDF</button>
+                                <button class="check-cu__detail-xls">Экспорт в XLS</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="my-orders__block">
+                        <div class="my-orders__top">
+                            <p class="my-orders__top-info">Заказ <span>174683</span> от <span>24.06.2021</span></p>
+                            <p class="my-orders__top-info">Товар <span>(силами продавца)</span></p>
+                        </div>
+                        <a class="my-orders__item" href="#">
+                            <div class="my-orders__photo">
+                                <img src="img/orders/order.png" alt="">
+                            </div>
+                            <div class="my-orders__info">
+                                <p class="my-orders__info-title">Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл. </p>
+                                <div class="my-orders__info-price">
+                                    $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                </div>
+                                <p class="my-orders__number">3 шт.</p>
+                            </div>
+                        </a>
+                        <a class="my-orders__item" href="#">
+                            <div class="my-orders__photo">
+                                <img src="img/orders/order.png" alt="">
+                            </div>
+                            <div class="my-orders__info">
+                                <p class="my-orders__info-title">Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл. </p>
+                                <div class="my-orders__info-price">
+                                    $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                </div>
+                                <p class="my-orders__number">3 шт.</p>
+                            </div>
+                        </a>
+                        <div class="my-orders__nav">
+                            <button class="my-orders__confirm">Подтвердить доставку</button>
+                            <a class="my-orders__show-info">Информация о заказе</a>
+                        </div> 
+                    </div>
+                    <div class="my-orders__block">
+                        <div class="my-orders__top">
+                            <p class="my-orders__top-info">Заказ <span>174683</span> от <span>24.06.2021</span></p>
+                            <p class="my-orders__top-info">Товар <span>(силами продавца)</span></p>
+                        </div>
+                        <a class="my-orders__item" href="#">
+                            <div class="my-orders__photo">
+                                <img src="img/orders/order.png" alt="">
+                            </div>
+                            <div class="my-orders__info">
+                                <p class="my-orders__info-title">Mol & B Multi-Functional Regenerating Facial Cream Многофункциональный регенерирующий крем для лица 50 мл</p>
+                                <div class="my-orders__info-price">
+                                    $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                </div>
+                                <p class="my-orders__number">3 шт.</p>
+                            </div>
+                        </a>
+                        <div class="my-orders__nav">
+                            <button class="my-orders__confirm">Подтвердить доставку</button>
+                            <a class="my-orders__show-info">Информация о заказе</a>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <div class="pagination__link-wrap">
+                            <a class="pagination__btn btn-prev" href="#"></a>
+                            <div>
+                                <span class="pagination__link pagination__link-active">1</span>
+                                <a href="#" class="pagination__link">2</a>
+                                <a href="#" class="pagination__link">3</a>
+                                <a href="#" class="pagination__link">4</a>
+                                <a href="#" class="pagination__link">5</a>
+                                <span class="pagination__link">...</span>
+                                <a href="#" class="pagination__link">29</a>
+                            </div>
+                            <a class="pagination__btn btn-next" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @include('partials/footer.html', {
+        "add-class": "closed-part",
+        })
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

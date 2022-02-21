@@ -1,6 +1,101 @@
+@media(max-width:1919px) {
+    .my-orders__tab {
+
+        &:nth-child(1) {
+            min-width: 160px;
+        }
+
+        &:nth-child(2) {
+            min-width: 170px;
+        }
+
+        &:nth-child(3) {
+            min-width: 170px;
+        }
+
+        &:nth-child(4) {
+            min-width: 190px;
+        }
+
+        &:nth-child(5) {
+            min-width: 200px;
+        }
+
+        &:nth-child(6) {
+            min-width: 130px;
+        }
+    }
+
+    .my-orders__content-text {
+        max-width: 1020px;
+    }
+}
+
 @media(max-width:1439px) {
     .check-cu__detail-export {
         margin-left: auto;
+    }
+
+    .my-orders__rating {
+        .closed-part__tooltip-info {
+            top: -39px;
+            left: -39px;
+        }
+    }
+
+    .my-orders__tab {
+        min-width: 200px;
+    }
+
+    .my-orders__creation-wrapper {
+        flex-direction: column;
+    }
+
+    .my-orders__creation-info {
+        margin-left: 0;
+
+        p {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+    }
+
+    .my-orders__creation-item--feedback .my-orders__creation-group+.my-orders__creation-group {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .my-orders__creation-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-orders__creation-block .my-orders__creation-group {
+        margin-top: 24px !important;
+        margin-right: 0;
+    }
+
+    .my-orders__file {
+        width: 93px;
+        height: 93px;
+    }
+
+
+    .my-orders__creation-nav {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 560px;
+    }
+}
+
+@media(max-width:1365px) {
+    .my-orders__data-item {
+        width: 100%;
+    }
+
+    .my-orders-info__link {
+        width: 219px;
+        height: 38px;
+        margin-bottom: 24px;
     }
 }
 
@@ -47,6 +142,20 @@
 
     .card-prod__name {
         height: 38px;
+    }
+
+    .my-orders__info-analytics {
+        flex-wrap: wrap;
+    }
+
+    .my-orders__info-analytics-title {
+        width: 100%;
+    }
+
+    .my-orders__info-analytics span {
+        margin-left: 0;
+        margin-top: 6px;
+        margin-right: 24px;
     }
 }
 
@@ -206,6 +315,14 @@
         &+& {
             margin-left: 0;
         }
+    }
+
+    .my-orders__control-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .my-orders__control-block+.my-orders__control-block {
+        margin-top: 8px;
     }
 }
 
@@ -476,6 +593,59 @@
     .check-cu__board {
         padding: 8px;
     }
+
+    .my-orders__data-item {
+        flex-direction: column;
+    }
+
+    .my-orders__data-info {
+        margin-bottom: 6px;
+    }
+
+    .my-orders__data {
+        &:last-child {
+            margin-bottom: 37.5px;
+        }
+    }
+
+    .my-orders-info__block {
+        margin-bottom: 25px;
+    }
+
+    .my-orders__content-item {
+        .my-orders__item {
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        .my-orders__info-wrapper {
+            flex-direction: column;
+        }
+
+        .my-orders__photo {
+            width: 80px;
+            min-width: unset;
+            height: 80px;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+    }
+
+    .my-orders__control {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .my-orders__control-block {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .my-orders__info-wrapper .my-orders__info-price+.my-orders__info-price {
+        margin-left: 0;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -583,6 +753,30 @@
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .my-orders__creation-groups {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 367px;
+    }
+
+    .my-orders__photo-list {
+        overflow-x: auto;
+    }
+
+    .my-orders__file {
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+
+        img {
+            width: 17.16px;
+            height: 17.16px;
+        }
+
+        &+& {
+            margin-left: 10px;
+        }
     }
 }
 
@@ -765,7 +959,48 @@
         min-width: 260px;
     }
 
+    .my-orders__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .my-orders__top-info {
+        &+& {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    .my-orders__photo {
+        width: 80px;
+        min-width: unset;
+        height: 80px;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .my-orders__item {
+        flex-direction: column;
+    }
+
+    .my-orders__nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-orders__confirm {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .my-orders__rating {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .my-orders__creation-item+.my-orders__creation-item {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -826,8 +1061,50 @@
     .entrance .form {
         width: 100%;
     }
+
     .card-prod {
         padding: 5px;
+    }
+
+    .my-orders__currency-block {
+        flex-direction: column;
+    }
+
+    .my-orders__currency-btn {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .my-orders__list-block {
+        flex-direction: column;
+    }
+
+    .my-orders__btn-view {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .my-orders__creation-item--feedback {
+        margin-bottom: 25px;
+    }
+
+    .my-orders__creation-nav {
+        grid-gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .my-orders__creation-block .my-orders__creation-group {
+        margin-top: 15px !important;
+    }
+
+    .my-orders__creation-block {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .my-orders__creation-title {
+        margin-bottom: 10px;
     }
 }
 
@@ -839,5 +1116,10 @@
 
     .shop-page__descr {
         margin-left: 0;
+    }
+
+    .my-orders__creation-groups {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
     }
 }
