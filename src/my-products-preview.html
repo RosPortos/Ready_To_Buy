@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="il-style">
+    <div class="page">
+        @include('partials/header.html')
+        <div class="closed-part">
+            <div class="menu">
+                <button class="menu__close"></button>
+                <p class="menu__title">Меню для клиента</p>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#">Мой профиль</a>
+                        <a class="menu__link" href="#">Информация о площадке</a>
+                        <a class="menu__link" href="#">Счёт CU</a>
+                        <a class="menu__link" href="#">Персональный счет</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Платежные реквизиты</a>
+                        <a class="menu__link" href="#">Адреса отгрузки</a>
+                        <a class="menu__link active" href="#">Мой магазин</a>
+                        <a class="menu__link" href="#">Мои товары</a>
+                        <a class="menu__link" href="#">Добавить товар</a>
+                        <a class="menu__link" href="#">Мои шаблоны</a>
+                        <a class="menu__link" href="#">Мои продажи</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Реферальная ссылка</a>
+                        <a class="menu__link" href="#">Структура</a>
+                        <a class="menu__link" href="#">Бонусы</a>
+                        <a class="menu__link" href="#">Материалы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="closed-part__content">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <div class="mobile-overflow">
+                                <li class="breadcrumbs__list-item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Продавцам</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span>Мои магазин</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <button class="show-menu">Показать меню</button>
+
+                    <h2 class="closed-part__title">Превью товаров</h2>
+
+                    <div class="my-orders__descr">
+                        Информация о разделе «Превью товаров»
+                    </div>
+
+                    <div class="products-preview">
+                        <div class="card-prod-wrap">
+                            <a href="#" class="card-prod">
+                                <div class="card-prod__img">
+                                    <img loading="lazy" src="img/coat-img2.png" alt="img">
+                                </div>
+                                <div class="card-prod__category">
+                                    Детская одежда, обувь и акс…
+                                </div>
+                                <div class="card-prod__name">
+                                    Озорник)) Жилет Я 23.5))
+                                    Пермь
+                                </div>
+                                <div class="card-prod__price">
+                                    $35,8
+                                    <div>
+                                        $60 + <span>$6</span>
+                                    </div>
+                                </div>
+                                <div class="card-prod__btn">Купить</div>
+                            </a>
+                        </div>
+                        <div class="card-prod-wrap">
+                            <a href="#" class="card-prod">
+                                <div class="card-prod__img">
+                                    <img loading="lazy" src="img/coat-img2.png" alt="img">
+                                </div>
+                                <div class="card-prod__category">
+                                    Детская одежда, обувь и акс…
+                                </div>
+                                <div class="card-prod__name">
+                                    Озорник)) Жилет Я 23.5))
+                                    Пермь
+                                </div>
+                                <div class="card-prod__price">
+                                    $35,8
+                                    <div>
+                                        $60 + <span>$6</span>
+                                    </div>
+                                </div>
+                                <div class="card-prod__btn">Купить</div>
+                            </a>
+                        </div>
+                        <div class="card-prod-wrap">
+                            <a href="#" class="card-prod">
+                                <div class="card-prod__img">
+                                    <img loading="lazy" src="img/coat-img2.png" alt="img">
+                                </div>
+                                <div class="card-prod__category">
+                                    Детская одежда, обувь и акс…
+                                </div>
+                                <div class="card-prod__name">
+                                    Озорник)) Жилет Я 23.5))
+                                    Пермь
+                                </div>
+                                <div class="card-prod__price">
+                                    $35,8
+                                    <div>
+                                        $60 + <span>$6</span>
+                                    </div>
+                                </div>
+                                <div class="card-prod__btn">Купить</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        @include('partials/footer.html', {
+        "add-class": "closed-part",
+        })
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

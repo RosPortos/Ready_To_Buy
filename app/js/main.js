@@ -89,6 +89,12 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).toggleClass('active');
     $(this).parent().find('.shop-page__text').toggleClass('text-hide');
   });
+
+  function myFunction(textBlock) {
+    var copyText = document.getElementById(textBlock);
+    copyText.select();
+    document.execCommand("copy");
+  }
 });
 "use strict";
 
@@ -301,6 +307,82 @@ function toggleMenu() {
 }
 
 toggleMenu();
+"use strict";
+
+var modaWrap = document.querySelectorAll('.modal-wrap'),
+    scrollHide = calcScroll();
+
+function bindModal(triggerSelector, modalSelector) {
+  var trigger = document.querySelectorAll(triggerSelector),
+      modal = document.querySelector(modalSelector);
+  trigger.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeModal();
+      modal.classList.add('active');
+      hideScroll();
+    });
+  });
+}
+
+function calcScroll() {
+  var div = document.createElement('div');
+  div.style.width = '50px';
+  div.style.height = '50px';
+  div.style.overflowY = 'scroll';
+  div.style.visibility = 'hidden';
+  document.body.appendChild(div);
+  var scrollWidth = div.offsetWidth - div.clientWidth;
+  div.remove();
+  return scrollWidth;
+}
+
+function hideScroll() {
+  document.body.style.overflow = "hidden";
+  document.body.style.marginRight = "".concat(scrollHide, "px");
+  modaWrap.forEach(function (item) {
+    item.style.width = "calc(100% - ".concat(scrollHide, "px)");
+  });
+}
+
+function showScroll() {
+  document.body.style.overflow = "";
+  document.body.style.marginRight = '';
+  modaWrap.forEach(function (item) {
+    item.style.width = '';
+  });
+}
+
+bindModal('.show-remove-moderation', '.remove-moderation ');
+bindModal('.show-save-template', '.saving-template');
+
+function closeModal() {
+  var modalAll = document.querySelectorAll('.modal-wrap');
+  modalAll.forEach(function (item) {
+    item.classList.remove('active');
+    showScroll();
+  });
+}
+
+function closeAllModal() {
+  var modalAll = document.querySelectorAll('.modal-wrap');
+  var modalClose = document.querySelectorAll('.modal__close');
+  modalClose.forEach(function (item) {
+    item.addEventListener('click', function () {
+      closeModal();
+    });
+  });
+  modalAll.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      if (e.target === item) {
+        item.classList.remove('active');
+        showScroll();
+      }
+    });
+  });
+}
+
+closeAllModal();
 "use strict";
 
 function showPopup(parent, item) {

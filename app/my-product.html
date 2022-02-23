@@ -139,14 +139,19 @@
                         <a class="menu__link" href="#">Персональный счет</a>
                     </li>
                     <li class="menu__block">
-                        <a class="menu__link" href="#">Каталог</a>
-                        <a class="menu__link" href="#">Новые магазины</a>
-                        <a class="menu__link" href="#">Все магазины</a>
-                        <a class="menu__link active" href="#">Мои заказы</a>
-                        <a class="menu__link" href="#">Мои адреса</a>
+                        <a class="menu__link" href="#">Платежные реквизиты</a>
+                        <a class="menu__link" href="#">Адреса отгрузки</a>
+                        <a class="menu__link" href="#">Мой магазин</a>
+                        <a class="menu__link active" href="#">Мои товары</a>
+                        <a class="menu__link" href="#">Добавить товар</a>
+                        <a class="menu__link" href="#">Мои шаблоны</a>
+                        <a class="menu__link" href="#">Мои продажи</a>
                     </li>
                     <li class="menu__block">
                         <a class="menu__link" href="#">Реферальная ссылка</a>
+                        <a class="menu__link" href="#">Структура</a>
+                        <a class="menu__link" href="#">Бонусы</a>
+                        <a class="menu__link" href="#">Материалы</a>
                     </li>
                 </ul>
             </div>
@@ -159,10 +164,10 @@
                                     <a href="index.html">Главная</a>
                                 </li>
                                 <li class="breadcrumbs__list-item">
-                                    <a href="#">Клиентам</a>
+                                    <a href="#">Продавцам</a>
                                 </li>
                                 <li class="breadcrumbs__list-item">
-                                    <span>Мои заказы</span>
+                                    <span>Мои товары</span>
                                 </li>
                             </div>
                         </ul>
@@ -177,7 +182,8 @@
                     </div>
                     <div class="my-orders__currency">
                         <p class="my-orders__currency-title">Валюта продавца</p>
-                        <p class="my-orders__currency-text">Выберите региональную валюту, которая будет использоваться для Ваших товаров.</p>
+                        <p class="my-orders__currency-text">Выберите региональную валюту, которая будет использоваться
+                            для Ваших товаров.</p>
                         <p class="my-orders__currency-label">Валюта</p>
                         <form class="my-orders__currency-block" action="/">
                             <label class="select-label">
@@ -213,12 +219,93 @@
                         <button class="my-orders__tab" data-id="#rejected">На модерации<span>10</span></button>
                         <button class="my-orders__tab" data-id="#moderation">На модерации<span>10</span></button>
                         <button class="my-orders__tab" data-id="#noSales">Снято с продажи<span>0</span></button>
-                        <button class="my-orders__tab" data-id="#incorrectPrice">Некорректная цена<span>0</span></button>
+                        <button class="my-orders__tab" data-id="#incorrectPrice">Некорректная
+                            цена<span>0</span></button>
                         <button class="my-orders__tab" data-id="#draft">Черновик<span>0</span></button>
                     </div>
                     <div class="my-orders__content">
                         <div class="my-orders__content-item active" id="approved">
-                            <p class="my-orders__content-text">На текущий момент у Вас нет одобренных товаров</p>
+                            <div class="my-orders__item">
+                                <div class="my-orders__photo">
+                                    <img src="img/orders/order.png" alt="">
+                                </div>
+                                <div class="my-orders__info">
+                                    <p class="my-orders__info-title">Mol & B Refreshing Skin Toner - Освежающий тоник
+                                        для лица 150 мл. </p>
+                                    <div class="my-orders__info-wrapper">
+                                        <div class="my-orders__info-price">
+                                            $35,8 <p>$29,6 + <span>$6,2</span></p>
+                                        </div>
+                                        <div class="my-orders__info-price">
+                                            <p>TMT130 + <span>$6,2</span></p>
+                                        </div>
+                                    </div>
+                                    <p class="my-orders__info-delivery">Товар (силами продавца)</p>
+                                    <div class="my-orders__info-analytics">
+                                        <p class="my-orders__info-analytics-title">Аналитика товара:</p>
+                                        <span>90 за сегодня</span>
+                                        <span>2951 за неделю</span>
+                                        <span>12951 за месяц</span>
+                                    </div>
+
+                                    <div class="my-orders__info-comment">
+                                        Комментарий модератора: <span>Рекомендуем добавить более качественное
+                                            изображение</span>
+                                    </div>
+                                </div>
+                                <div class="my-orders__control">
+                                    <div class="my-orders__control-block">
+                                        <button class="my-orders__control-btn tippy" data-tippy-content="Редактировать">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#edit"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Перейти на склад">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#delivery"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Возобновить продажи">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#play"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy" data-tippy-content="Удалить товар">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="my-orders__control-block">
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Повысить товар">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#up"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Понизить товар">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#down"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Показ в магазине">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#store"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="my-orders__control-btn tippy"
+                                            data-tippy-content="Показ в карточке магазина">
+                                            <svg>
+                                                <use xlink:href="img/sprite.svg#account"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="my-orders__content-item" id="rejected">
                             <p class="my-orders__content-text">Пусто</p>
@@ -235,6 +322,26 @@
                         <div class="my-orders__content-item" id="draft">
                             <p class="my-orders__content-text">Пусто</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-wrap modal-sellers-currency">
+            <div class="modal-min">
+                <div class="modal__body">
+                    <div class="modal-min__title">
+                        Валюта продавца
+                    </div>
+                    <p class="modal-min__text">
+                        Валютой продавца был выбран Российский рубль (RUB).
+                        <br><br>
+                        Информация сохранена.
+                    </p>
+                    <div class="modal-min__bottom">
+                        <button class="modal-min__btn modal__close btn btn-close">
+                            Закрыть
+                        </button>
                     </div>
                 </div>
             </div>

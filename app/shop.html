@@ -139,14 +139,19 @@
                         <a class="menu__link" href="#">Персональный счет</a>
                     </li>
                     <li class="menu__block">
-                        <a class="menu__link" href="#">Каталог</a>
-                        <a class="menu__link" href="#">Новые магазины</a>
-                        <a class="menu__link" href="#">Все магазины</a>
-                        <a class="menu__link active" href="#">Мои заказы</a>
-                        <a class="menu__link" href="#">Мои адреса</a>
+                        <a class="menu__link" href="#">Платежные реквизиты</a>
+                        <a class="menu__link" href="#">Адреса отгрузки</a>
+                        <a class="menu__link active" href="#">Мой магазин</a>
+                        <a class="menu__link" href="#">Мои товары</a>
+                        <a class="menu__link" href="#">Добавить товар</a>
+                        <a class="menu__link" href="#">Мои шаблоны</a>
+                        <a class="menu__link" href="#">Мои продажи</a>
                     </li>
                     <li class="menu__block">
                         <a class="menu__link" href="#">Реферальная ссылка</a>
+                        <a class="menu__link" href="#">Структура</a>
+                        <a class="menu__link" href="#">Бонусы</a>
+                        <a class="menu__link" href="#">Материалы</a>
                     </li>
                 </ul>
             </div>
@@ -159,10 +164,10 @@
                                     <a href="index.html">Главная</a>
                                 </li>
                                 <li class="breadcrumbs__list-item">
-                                    <a href="#">Клиентам</a>
+                                    <a href="#">Продавцам</a>
                                 </li>
                                 <li class="breadcrumbs__list-item">
-                                    <span>Мои заказы</span>
+                                    <span>Мои магазин</span>
                                 </li>
                             </div>
                         </ul>
@@ -170,72 +175,60 @@
 
                     <button class="show-menu">Показать меню</button>
 
-                    <h2 class="closed-part__title">Мои заказы</h2>
+                    <h2 class="closed-part__title">Мой магазин</h2>
 
                     <div class="my-orders__descr">
-                        Информация о разделе «Мои заказы»
+                        Информация о разделе «Мой магазин»
                     </div>
-                    <div class="my-orders__currency">
-                        <p class="my-orders__currency-title">Валюта продавца</p>
-                        <p class="my-orders__currency-text">Выберите региональную валюту, которая будет использоваться для Ваших товаров.</p>
-                        <p class="my-orders__currency-label">Валюта</p>
-                        <form class="my-orders__currency-block" action="/">
-                            <label class="select-label">
-                                <select class="select-custom">
-                                    <option value="">
-                                        Российский рубль
-                                    </option>
-                                    <option value="">
-                                        Российский рубль
-                                    </option>
-                                    <option value="">
-                                        Российский рубль
-                                    </option>
-                                </select>
-                            </label>
-                            <button class="my-orders__currency-btn btn btn--trans">Сохранить</button>
-                        </form>
-                    </div>
-                    <div class="my-orders__list">
-                        <p class="my-orders__list-title">Список моих товаров</p>
-                        <div class="my-orders__list-block">
-                            <button class="my-orders__btn-add btn btn--green">Добавить товар</button>
-                            <button class="my-orders__btn-view btn btn--trans-gray">
-                                Превью товаров
-                                <svg>
-                                    <use xlink:href="img/sprite.svg#view"></use>
-                                </svg>
-                            </button>
+
+                    <div class="store-data">
+                        <p class="my-orders__creation-title">Стоимость товара</p>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Название магазина</p>
+                            <input class="input" type="text" name="productName" placeholder="Введите название магазина">
+                        </div>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Описание магазина</p>
+                            <textarea class="textarea" name="fullDescr"
+                                placeholder="Введите описание мин. 50, макс. 4000 символов"></textarea>
+                            <div class="my-orders__number-symbol">
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Логотип (рекомендуем загружать логотипы на прозрачном
+                                или белом фоне)</p>
+                            <div class="my-orders__photo-list">
+                                <label class="my-orders__file">
+                                    <input type="file" name="photo1">
+                                    <img src="img/plus.svg" alt="">
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="my-orders__tabs">
-                        <button class="my-orders__tab active" data-id="#approved">Одобренные<span>0</span></button>
-                        <button class="my-orders__tab" data-id="#rejected">На модерации<span>10</span></button>
-                        <button class="my-orders__tab" data-id="#moderation">На модерации<span>10</span></button>
-                        <button class="my-orders__tab" data-id="#noSales">Снято с продажи<span>0</span></button>
-                        <button class="my-orders__tab" data-id="#incorrectPrice">Некорректная цена<span>0</span></button>
-                        <button class="my-orders__tab" data-id="#draft">Черновик<span>0</span></button>
-                    </div>
-                    <div class="my-orders__content">
-                        <div class="my-orders__content-item active" id="approved">
-                            <p class="my-orders__content-text">На текущий момент у Вас нет одобренных товаров</p>
+
+                    <div class="feedback-block">
+                        <p class="my-orders__creation-title">Обратная связь (не обязательно к заполнению)</p>
+                        <div class="feedback-block__wrap">
+                            <div class="my-orders__creation-group">
+                                <p class="my-orders__creation-label">Комментарий для модератора</p>
+                                <textarea class="textarea" name="fullDescr"
+                                    placeholder="Введите комментарий, либо вопрос, если он есть"></textarea>
+                                <div class="my-orders__number-symbol">
+                                </div>
+                            </div>
+                            <div class="my-orders__creation-group not-comment bg-grey">
+                                <p class="my-orders__creation-label">Ответ модератора</p>
+                                <textarea class="textarea" name="fullDescr"></textarea>
+                                <div class="my-orders__number-symbol">
+                                </div>
+                            </div>
                         </div>
-                        <div class="my-orders__content-item" id="rejected">
-                            <p class="my-orders__content-text">Пусто</p>
-                        </div>
-                        <div class="my-orders__content-item" id="moderation">
-                            <p class="my-orders__content-text">Пусто</p>
-                        </div>
-                        <div class="my-orders__content-item" id="noSales">
-                            <p class="my-orders__content-text">Пусто</p>
-                        </div>
-                        <div class="my-orders__content-item" id="incorrectPrice">
-                            <p class="my-orders__content-text">Пусто</p>
-                        </div>
-                        <div class="my-orders__content-item" id="draft">
-                            <p class="my-orders__content-text">Пусто</p>
+                        <div class="feedback-block__bottom">
+                            <button class="feedback-block__btn btn btn--green">Добавить товар</button>
+                            <button class="feedback-block__btn btn btn--gray">Отменить</button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

@@ -108,6 +108,15 @@ document.addEventListener('DOMContentLoaded', function () {
         $(this).parent().find('.shop-page__text').toggleClass('text-hide');
     });
 
+    function myFunction(textBlock) {
+        var copyText = document.getElementById(textBlock);
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+
+
+
 
 
 

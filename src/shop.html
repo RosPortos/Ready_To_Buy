@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="il-style">
+    <div class="page">
+        @include('partials/header.html')
+        <div class="closed-part">
+            <div class="menu">
+                <button class="menu__close"></button>
+                <p class="menu__title">Меню для клиента</p>
+                <ul class="menu__list">
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Главная</a>
+                        <a class="menu__link" href="#">Мой профиль</a>
+                        <a class="menu__link" href="#">Информация о площадке</a>
+                        <a class="menu__link" href="#">Счёт CU</a>
+                        <a class="menu__link" href="#">Персональный счет</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Платежные реквизиты</a>
+                        <a class="menu__link" href="#">Адреса отгрузки</a>
+                        <a class="menu__link active" href="#">Мой магазин</a>
+                        <a class="menu__link" href="#">Мои товары</a>
+                        <a class="menu__link" href="#">Добавить товар</a>
+                        <a class="menu__link" href="#">Мои шаблоны</a>
+                        <a class="menu__link" href="#">Мои продажи</a>
+                    </li>
+                    <li class="menu__block">
+                        <a class="menu__link" href="#">Реферальная ссылка</a>
+                        <a class="menu__link" href="#">Структура</a>
+                        <a class="menu__link" href="#">Бонусы</a>
+                        <a class="menu__link" href="#">Материалы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="closed-part__content">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <div class="mobile-overflow">
+                                <li class="breadcrumbs__list-item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <a href="#">Продавцам</a>
+                                </li>
+                                <li class="breadcrumbs__list-item">
+                                    <span>Мои магазин</span>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <button class="show-menu">Показать меню</button>
+
+                    <h2 class="closed-part__title">Мой магазин</h2>
+
+                    <div class="my-orders__descr">
+                        Информация о разделе «Мой магазин»
+                    </div>
+
+                    <div class="store-data">
+                        <p class="my-orders__creation-title">Стоимость товара</p>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Название магазина</p>
+                            <input class="input" type="text" name="productName" placeholder="Введите название магазина">
+                        </div>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Описание магазина</p>
+                            <textarea class="textarea" name="fullDescr"
+                                placeholder="Введите описание мин. 50, макс. 4000 символов"></textarea>
+                            <div class="my-orders__number-symbol">
+                            </div>
+                        </div>
+                        <div class="my-orders__creation-group">
+                            <p class="my-orders__creation-label">Логотип (рекомендуем загружать логотипы на прозрачном
+                                или белом фоне)</p>
+                            <div class="my-orders__photo-list">
+                                <label class="my-orders__file">
+                                    <input type="file" name="photo1">
+                                    <img src="img/plus.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-block">
+                        <p class="my-orders__creation-title">Обратная связь (не обязательно к заполнению)</p>
+                        <div class="feedback-block__wrap">
+                            <div class="my-orders__creation-group">
+                                <p class="my-orders__creation-label">Комментарий для модератора</p>
+                                <textarea class="textarea" name="fullDescr"
+                                    placeholder="Введите комментарий, либо вопрос, если он есть"></textarea>
+                                <div class="my-orders__number-symbol">
+                                </div>
+                            </div>
+                            <div class="my-orders__creation-group not-comment bg-grey">
+                                <p class="my-orders__creation-label">Ответ модератора</p>
+                                <textarea class="textarea" name="fullDescr"></textarea>
+                                <div class="my-orders__number-symbol">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-block__bottom">
+                            <button class="feedback-block__btn btn btn--green">Добавить товар</button>
+                            <button class="feedback-block__btn btn btn--gray">Отменить</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        @include('partials/footer.html', {
+        "add-class": "closed-part",
+        })
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
