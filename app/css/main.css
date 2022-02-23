@@ -4761,6 +4761,7 @@ body.scroll-hide {
 
 .check-cu__table {
   min-width: 1013px;
+  width: 100%;
 }
 .check-cu__table thead {
   background: #E0E0E0;
@@ -4913,9 +4914,6 @@ body.scroll-hide {
   .my-orders__block .my-orders__item:hover .my-orders__info-title {
     color: #26C1FA;
     text-decoration: underline;
-  }
-  .my-orders__block .my-orders__item:hover .my-orders__photo img {
-    transform: translateY(-30px);
   }
 }
 
